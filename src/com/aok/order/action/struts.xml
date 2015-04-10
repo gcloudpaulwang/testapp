@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="com.aok.cake.order" namespace="/cake/order" extends="struts-default">
+		<action name="list" method="list" class="com.aok.order.action.CakeOrderAction">
+			<result type="json" />
+		</action>
+		<action name="save" method="save" class="com.aok.order.action.CakeOrderAction">
+			<result type="json" />
+		</action>
+		<action name="del" method="del" class="com.aok.order.action.CakeOrderAction">
+			<result type="json" />
+		</action>
+		<action name="list_changes" method="listChanges" class="com.aok.order.action.CakeOrderAction">
+			<result type="json" />
+		</action>
+		<action name="save_change" method="saveChange" class="com.aok.order.action.CakeOrderAction">
+			<result type="json" />
+		</action>
+		<action name="del_change" method="delChange" class="com.aok.order.action.CakeOrderAction">
+			<result type="json" />
+		</action>
+		<action name="statistics" method="statistics" class="com.aok.order.action.CakeOrderAction">
+			<result type="json" />
+		</action>
+		<action name="exportStatistics" method="exportStatistics" class="com.aok.order.action.CakeOrderAction">
+			<result type="json" />
+		</action>
+		<action name="print" method="print" class="com.aok.order.action.CakeOrderAction">
+			<result>${tplPath}</result>
+		</action>
+	</package>
+	<package name="com.aok.accessory.order" namespace="/accessory/order" extends="struts-default">
+		<action name="list" method="list" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="save" method="save" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="detail" method="detail" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="del" method="del" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="list_accessories" method="listAccessories" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="save_accessory" method="saveAccessory" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="batch_save_accessory" method="batchSaveAccessory" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="del_accessory" method="delAccessory" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="list_changes" method="listChanges" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="list_change_items" method="listChangeItems" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="statistics" method="statistics" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+		<action name="exportStatistics" method="exportStatistics" class="com.aok.order.action.AccessoryOrderAction">
+			<result type="json" />
+		</action>
+	</package>
+	
+	<package name="com.aok.finance" namespace="/finance" extends="struts-default">
+		<action name="finance" method="finance" class="com.aok.order.action.FinanceAction">
+			<result type="json" />
+		</action>
+		<action name="accessory" method="accessory" class="com.aok.order.action.FinanceAction">
+			<result type="json" />
+		</action>
+		<action name="exportAccessory" method="exportAccessory" class="com.aok.order.action.FinanceAction">
+			<result type="json" />
+		</action>
+		<action name="exportFinance" method="exportFinance" class="com.aok.order.action.FinanceAction">
+			<result type="json" />
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="com.aok.user.profile" namespace="/profile" extends="struts-default">
+		<action name="info" method="info" class="com.aok.user.action.UserAction">
+			<result type="json" />
+		</action>
+		<action name="infoWithPermissions" method="infoWithPermissions" class="com.aok.user.action.UserAction">
+			<result type="json" />
+		</action>
+		<action name="update" method="update" class="com.aok.user.action.UserAction">
+			<result type="json" />
+		</action>
+		<action name="updatePwd" method="updatePwd" class="com.aok.user.action.UserAction">
+			<result type="json" />
+		</action>
+	</package>
+	<package name="com.aok.user" namespace="/user" extends="struts-default">
+		<action name="list" method="list" class="com.aok.user.action.UserAction">
+			<result type="json" />
+		</action>
+		<action name="del" method="del" class="com.aok.user.action.UserAction">
+			<result type="json" />
+		</action>
+		<action name="add" method="add" class="com.aok.user.action.UserAction">
+			<result type="json" />
+		</action>
+		<action name="edit" method="edit" class="com.aok.user.action.UserAction">
+			<result type="json" />
+		</action>
+	</package>
+</struts>

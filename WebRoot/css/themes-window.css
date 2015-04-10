@@ -1,0 +1,89 @@
+
+/* Window */
+.x-window-proxy {
+    background:#e4e8ec;
+    border-color:#abc;
+}
+.x-window-tl .x-window-header {
+	height:20px;
+	padding:7px 0 5px 0;
+    color:#ffffff;
+}
+
+.x-window-tl .x-window-header-text {
+	line-height:20px;
+	padding-left:25px;
+    background-image:url(../images/icons/shape_ungroup.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+.x-window-tc {
+	background-image:url(../images/themes/window_top-bottom.png);
+}
+.x-window-tl {
+	background-image:url(../images/themes/window_left-corners.png);
+}
+.x-window-tr {
+	background-image:url(../images/themes/window_right-corners.png);
+}
+.x-window-bc {
+	background-image:url(../images/themes/window_top-bottom.png);
+}
+.x-window-bl {
+	background-image:url(../images/themes/window_left-corners.png);
+}
+.x-window-br {
+	background-image:url(../images/themes/window_right-corners.png);
+}
+.x-window-mc {
+    border:1px solid #abc;
+    background:#daebfc;
+}
+
+.x-window-ml {
+	background-image:url(../images/themes/window_left-right.png);
+}
+.x-window-mr {
+	background-image:url(../images/themes/window_left-right.png);
+}
+.x-panel-ghost .x-window-tl {
+    border-color:#abc;
+}
+.x-panel-collapsed .x-window-tl {
+    border-color:#abc;
+}
+
+.x-window-plain .x-window-mc {
+    background: #e8e8e8;
+    border-right:1px solid #eee;
+    border-bottom:1px solid #eee;
+    border-top:1px solid #abc;
+    border-left:1px solid #abc;
+}
+
+.x-window-plain .x-window-body {
+    border-left:none;
+    border-top:none;
+    border-bottom:none;
+    border-right:none;
+    background:none;
+	padding:20px;
+}
+
+/*prompt of delete backgroud*/
+body.x-body-masked .x-window-mc, body.x-body-masked .x-window-plain .x-window-mc {
+    background-color: #daebfc;
+}
+/*formPanel backgroud*/
+.x-panel-body{ background:#daebfc;}
+
+/* Buttons */
+.x-panel-btns { padding-left:20px; padding-right:20px;}
+.x-window-bc .x-window-footer { padding-bottom:0;}
+
+.x-small-editor .x-form-text {
+    height:20px;
+    line-height:16px;
+    vertical-align:right;
+}

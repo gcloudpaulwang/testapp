@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="  ext-strict" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+<title>登录_互动教学备课平台</title>
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+<link rel="stylesheet" type="text/css" href="../css/account.css">
+<link rel="stylesheet" type="text/css" href="../css/thickbox.css">
+<script language="javascript" type="text/javascript" src="../scripts/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../scripts/thickbox-compressed.js"></script>
+<script type="text/javascript">
+	if(top!=self)
+		top.location = self.location;
+</script>
+<script language="javascript" type="text/javascript">
+ function freshImage(){
+ 	var imgstr = $("#imgstr");   
+	imgstr.attr("src","/edu_www/checkCode.svl?random=" + Math.random());
+ }
+</script>
+
+</head>
+<body class="ext-gecko ext-gecko3">
+<form id="">
+<div class="wrap" style="height:700px;">
+	<div class="header">
+    	<div class="headlink">
+			<a href="http://113.105.131.153/SchoolManageSystem/accountApply.html?TB_iframe=false&amp;height=603&amp;width=430&amp;modal=true" title="申请帐号" class="thickbox">申请账号</a>
+            <span>|</span> <a href="http://www.cloud-edu.cn/04.htm" target="_blank">关于我们</a>
+            <span>|</span> <a href="javascript:void(0);" id="J_setHomeBtn">设为首页</a>
+			<span>|</span> <a href="http://113.105.131.153:8018/bbs" target="_blank"><font color="#0000FF">产品论坛</font></a>
+        </div>	
+    </div>
+	
+<div class="aa-wrap" style="display:none; z-index: 9999;position:absolute;  border:solid1px#6e8bde;">
+	<div class="close-area"><input class="btn-close" id="closebtn" type="button"></div>
+	<div class="container">
+    	<table width="100%" cellpadding="0" cellspacing="0">
+        	<tbody><tr>
+            	<td>学校：</td>
+                <td width="210px;"><input class="text" name="" type="text"></td>
+                <td class="mark">*</td>
+            </tr>
+            <tr>
+            	<td>姓名：</td>
+                <td><input class="text" name="" type="text"></td>
+                <td class="mark">*</td>
+            </tr>
+            <tr>
+            	<td>联系电话：</td>
+                <td><input class="text" name="" type="text"></td>
+                <td class="mark">*</td>
+            </tr>
+            <tr>
+            	<td>电子邮箱：</td>
+                <td><input class="text" name="" type="text"></td>
+                <td class="mark">*</td>
+            </tr>
+            <tr>
+            	<td>备注：</td>
+            	<td colspan="2"><textarea class="textarea" id="accountremark" cols="" rows=""></textarea></td>
+            </tr>
+            <tr>
+            	<td colspan="3" class="loc" style="padding-top: 10px;"><input class="btn" name="" type="button"></td>
+            </tr>
+        </tbody></table>
+    </div>
+    <div class="btm">
+    	<p>联系我们：400-8833769 、 18922958931</p>
+        <p>邮箱地址：xiongfy@g-cloud.com.cn</p>
+    </div>
+</div>
+    <!---->
+    <div class="container">
+    	<div class="banner">
+        	<div class="nav">
+            	<ul style="left: -1190px;" id="J_navBox">
+                	<li class="on"><a href="#"><img src="../images/login/banner01.jpg"></a></li>
+                  	<li><a href="#"><img src="../images/login/banner02.JPG"></a></li>
+                 <li><a href="#"><img src="../images/login/banner03.jpg"></a></li>
+                    <li><a href="#"><img src="../images/login/banner04.jpg"></a></li>
+                    <li><a href="#"><img src="../images/login/banner05.jpg"></a></li>
+                    <li><a href="#"><img src="../images/login/banner06.jpg"></a></li>
+                </ul>
+            </div>
+			<ul class="nav_point" id="J_navPoint">
+                    <li class=""></li><li class=""></li><li class="on"></li><li class=""></li><li class=""></li><li class=""></li>
+            </ul><br>  
+			
+        </div>
+        <div class="login">
+        	<div style="display: block;" class="before-login">
+            	<div class="title"></div>
+        		<div class="cont">
+                	<label class="lab-user">帐号：</label>
+                    <div><input name="username" id="username" title="用户名不能为空" class="text" tabindex="1" type="text"></div>
+                    <label class="lab-pwd">密码：</label>
+                    <div><input name="password" id="password" title="密码不能为空" class="text" tabindex="2" type="password"></div> 
+                    <label class="lab-pwd">验证码：</label>
+                    <div><input name="validatecode" id="validatecode" maxlength="6" title="验证码不能为空" class="text-code" tabindex="3" type="text"><label class="coding"><a href="javascript:freshImage()" title="看不清点击换一张"><img id="imgstr" src="../images/validNumGenerate.jpeg" width="75" height="33"></a></label></div> 
+                    <label class="lab-prompt" style="display:none" id="span1">错误提示：</label>            
+               </div>
+               <div class="submit">
+               		<table border="0" cellpadding="0" cellspacing="0">
+                    	<tbody><tr>
+                        	<td>
+							<input id="btn-login" class="btn" type="button">
+							<input id="iflogin" value="0" type="hidden">
+							</td>
+                            <td><label class="forget"><a href="http://113.105.131.153/SchoolManageSystem/forgetpassword.html?TB_iframe=false&amp;height=532&amp;width=430&amp;modal=true" title="忘记密码" class="thickbox" id="J_forgetpassword">忘记密码</a></label></td>
+                          	<!--<td style=" padding-left:10px;">  <input value="" name="rember" class="rember"  id="rember" type="checkbox"></td>
+                           	<td><label class="rember" for="rember">记住我</label> </td>-->
+                        </tr>
+                    </tbody></table> 
+               </div>
+            </div>
+            <!--after login-->
+           <div class="after-login" style="display:none">
+        		<p class="out">[<a href="javascript:void(0);" class="logout">退出</a>]&nbsp;</p>
+                 <p class="hi"> <span id="realname">您好： </span></p>
+                <p class="img"> <img id="avatarurl" width="102" height="125"></p>
+                <p class="welcome">您好！教育云欢迎您!</p>
+                <p class="notice">(请选择页面下方您要登陆的应用)</p>
+               <!-- <p class="time">上次登陆的时间为: 2011/08/08</p>-->
+          </div>
+        </div>
+    </div>
+    <div style="display: none; left: 839px; top: 455px;" id="J_gameTips" class="tips">
+        <div class="tips_bg"></div>
+        <div class="tips_main">大规模分布、异构数据资源的透明安全管理</div>
+    </div>
+	<div class="product">
+    	<ul class="gamelist">
+        	<li id="jyy"><a href="http://www.cloud-edu.cn/" target="_blank" onfocus="this.blur();"><img src="../images/eduCloud.png"></a></li>
+            <li id="szxy"><a href="http://113.105.131.153/SchoolManageSystem/index.html" onfocus="this.blur();"><img src="../images/digitalCampus.png"></a></li>
+            <li id="ycc"><a href="http://school.fs.cloud114.com/edums" target="_blank" onfocus="this.blur();" id="edums"><img src="../images/store.png"></a></li>
+            <li id="jstx"><a href="http://113.105.131.153/SchoolManageSystem/csDownload.html" onfocus="this.blur();" target="_blank"><img src="../images/message.png"></a></li>
+            <li id="yczxt"><a href="http://113.105.131.170/member/Login.jspx" onfocus="this.blur();" target="_blank"><img src="../images/g-Cloud.png"></a></li>
+            <li id="ysjk"><a href="http://113.105.131.153/SchoolManageSystem/DatabaseSystem.html" onfocus="this.blur();" target="_blank"><img src="../images/terminal.png"></a></li>
+			<li id="jyw"><a href="http://www.dgjyw.com/Index.html" onfocus="this.blur();" target="_blank"><img src="../images/jyw.png"></a></li>
+        </ul>
+        <div class="clear-float"></div>
+    </div>
+     <!--footer-->
+    <div class="footer">
+    	<div class="pic"><a href="http://www.g-cloud.com.cn/" target="_blank"><img src="../images/logo-gcloud.jpg"></a></div>
+      <div class="remark">
+   	    <p>
+            	<a href="http://www.cloud-edu.cn/" target="_blank">关于教育云</a> <span>|</span> <a href="http://www.cloud-edu.cn/04.htm" target="_blank">联系我们</a> <span>| </span><a href="http://www.cloud-edu.cn/02.htm" target="_blank">开放合作</a><span> | </span><a href="http://www.cloud-edu.cn/03.htm" target="_blank">技术支持</a><span> |</span> <a href="http://113.105.131.153:8018/bbs">产品论坛</a> <span>|</span></p>
+            <p>增值电信业务许可经营证：粤0-20110701</p>
+       <!-- <p>服务热线：18922958931&nbsp;&nbsp; 邮件反馈：cloud-edu@g-cloud.com.cn</p>-->
+            <p>服务热线：18988729208&nbsp;&nbsp; 邮件反馈：075500@gmail.com</p>
+            <p>国云科技股份有限公司 Copyright © 2011-2012     &nbsp;</p>
+            <p>&nbsp;版本：V1.0.0&nbsp;&nbsp;&nbsp;联系客服：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2322433703&amp;site=qq&amp;menu=yes"><img src="../images/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a></p>
+      </div>
+        <div class="pic"><a href="http://www.gdeii.com.cn/" target="_blank"><img src="../images/logo-changping.jpg"></a></div>
+    </div>
+    <div class="clear-float"></div>
+</div>
+</form>
+<script type="text/javascript" src="../scripts/login.js"></script>
+<script language="javascript" type="text/javascript" src="../scripts/ext-base.js"></script>
+<script language="javascript" type="text/javascript" src="../scripts/ext-all.js"></script>
+
+
+
+</body></html>

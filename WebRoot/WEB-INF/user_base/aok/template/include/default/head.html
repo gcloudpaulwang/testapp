@@ -1,0 +1,59 @@
+﻿<div id="header">
+            <div class="logo"></div>
+            <div class="nav-area">
+                <div class="user">
+                    <span id="infortip" font-color="#4CAAEE"></span>
+                    <a href="#TB_inline?height=155&amp;width=300&amp;inlineId=myOnPageContent&amp;modal=true" class="thickbox" id="hyperURL"></a>
+                    <span id="realname">您好！${userId!} 现在是${defaultTerm!}</span>  [<a href="../public/edu!logout.do">退出</a>]<span style="margin-left: 12px;margin-right: 12px;"><a href="#" onclick="../profile/profile!show.do">个人信息</a> | <a href="http://113.105.131.153:8018/bbs/forumdisplay.php?fid=9&amp;page=1" target="_blank">关于我们</a> | <a href="http://login.cloud-edu.cn/SchoolManageSystem/HelpCenter.html" target="_blank">帮助中心</a>| <a href="http://www.google.com/chromeframe?quickenable=true" target="_blank">插件下载</a>
+                    </span>
+				</div>
+				<div class="link-outer">
+					<input name="" class="btn01" onclick="javascript:opennewwindow(1)" type="button">
+                  <!--<input name="" class="btn02" onclick="javascript:opennewwindow(2)" type="button">-->
+				</div>
+				<div class="main-nav">
+					<ul id="navigator">
+					<!--导航菜单项-->
+						<#if nav?? && nav=="userinfo">
+					    	<li class="checked" id="ni0">
+					    <#else>
+					    	<li id="ni0">
+					    </#if>
+                            <a href="../profile/profile!show.do">
+                                <div class="navbar02">用户信息</div>
+                            </a>
+						</li>
+							<#if nav?? && nav=="schedule">
+						    	<li class="checked" id="ni1">
+						    <#else>
+						    	<li id="ni1">
+						    </#if>
+								<a href="../schedule/schedule!show.do">
+									<div class="navbar05">课程计划</div>
+							    </a>
+							</li>
+						<#if allowPreparation>
+							<#if nav?? && nav=="preparation">
+						    	<li class="checked" id="ni2">
+						    <#else>
+						    	<li id="ni2">
+						    </#if>
+								<a href="../preparation/preparation!show.do">
+									<div class="navbar04">在线备课</div>
+								</a>
+							</li>
+						</#if>
+                        <li class="" id="ni3">
+							<a href="#">
+								<div class="navbar05">课堂评价</div>
+							</a>
+						</li>
+                        <li class="" id="ni4">
+                            <a href="#">
+                                <div class="navbar05">资源库</div>
+                            </a>
+                        </li>
+					</ul>
+				</div>
+			</div>
+		</div>

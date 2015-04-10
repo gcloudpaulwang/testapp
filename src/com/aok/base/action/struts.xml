@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="com.aok.base" namespace="/base" extends="struts-default">
+		<action name="listFactory" method="listFactory" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+		<action name="listStore" method="listStore" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+		<action name="listFactorySelect" method="listFactorySelect" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+		<action name="listStoreSelect" method="listStoreSelect" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+		<action name="listDict" method="listDict" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+		<action name="addDict" method="addDict" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+		<action name="editDict" method="editDict" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+		<action name="deleteDict" method="deleteDict" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+		<action name="listProdectType" method="listProdectType" class="com.aok.base.action.BaseAction">
+			<result type="json" />
+		</action>
+	</package>
+	<package name="com.aok.base.product" namespace="/product" extends="struts-default">
+		<action name="list" method="list" class="com.aok.base.action.ProductAction">
+			<result type="json" />
+		</action>
+		<action name="add" method="add" class="com.aok.base.action.ProductAction">
+			<result type="json" />
+		</action>
+		<action name="edit" method="edit" class="com.aok.base.action.ProductAction">
+			<result type="json" />
+		</action>
+	</package>
+	
+</struts>

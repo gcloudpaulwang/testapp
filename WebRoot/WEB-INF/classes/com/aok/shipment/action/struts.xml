@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="com.aok.cake.shipment" namespace="/cake/shipment" extends="struts-default">
+		<action name="stores_info" method="storesInfo" class="com.aok.shipment.action.CakeShipmentAction">
+			<result type="json" />
+		</action>
+		<action name="send" method="send" class="com.aok.shipment.action.CakeShipmentAction">
+			<result type="json" />
+		</action>
+		<action name="batch_send" method="batchSend" class="com.aok.shipment.action.CakeShipmentAction">
+			<result type="json" />
+		</action>
+		<action name="unsend" method="unsend" class="com.aok.shipment.action.CakeShipmentAction">
+			<result type="json" />
+		</action>
+		<action name="exportShipment" method="exportShipment" class="com.aok.shipment.action.CakeShipmentAction">
+			<result type="json" />
+		</action>
+	</package>
+	<package name="com.aok.accessory.shipment" namespace="/accessory/shipment" extends="struts-default">
+		<action name="stores_info" method="storesInfo" class="com.aok.shipment.action.AccessoryShipmentAction">
+			<result type="json" />
+		</action>
+		<action name="accessory_list" method="accessoryList" class="com.aok.shipment.action.AccessoryShipmentAction">
+			<result type="json" />
+		</action>
+		<action name="send" method="send" class="com.aok.shipment.action.AccessoryShipmentAction">
+			<result type="json" />
+		</action>
+		<action name="exportShipment" method="exportShipment" class="com.aok.shipment.action.AccessoryShipmentAction">
+			<result type="json" />
+		</action>
+	</package>
+</struts>

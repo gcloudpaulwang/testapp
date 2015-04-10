@@ -1,0 +1,31 @@
+.x-window-dlg .ext-mb-success {
+    background:url("../images/icons/success.gif") no-repeat top left;
+}
+.icon-add { background-image: url("../images/icons/add.gif") !important; background-repeat: no-repeat; }
+.icon-del { background-image: url("../images/icons/del.gif") !important; background-repeat: no-repeat; }
+.icon-edit { background-image: url("../images/icons/edit.gif") !important; background-repeat: no-repeat; }
+.icon-search { background-image: url("../images/icons/search.png") !important; background-repeat: no-repeat; }
+.icon-download { background-image: url("../images/icons/download.gif") !important; background-repeat: no-repeat; }
+.icon-save { background-image: url("../images/icons/save.gif") !important; background-repeat: no-repeat; }
+.icon-clear { background-image: url("../images/icons/clear.png") !important; background-repeat: no-repeat; }
+.icon-previous { background-image: url("../images/icons/previous.png") !important; background-repeat: no-repeat; }
+.icon-next { background-image: url("../images/icons/next.png") !important; background-repeat: no-repeat; }
+.icon-positive { background-image: url("../images/icons/positive.png") !important; background-repeat: no-repeat; }
+
+.topics{
+	border-collapse:collapse;
+	margin: 10px 0 10px 50px;
+	font-size: 12px;
+}
+.topics,.topics tr,.topics td{
+	border:1px solid #000;
+}
+.topics tr .title{
+	width:200px;
+	padding: 10px;
+    width: 30px;
+    font-weight:bold;
+}
+.topics tr .content{
+	width:600px;
+}

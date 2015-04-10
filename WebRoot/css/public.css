@@ -1,0 +1,186 @@
+﻿/* CSS Document */
+
+*{ padding:0px; margin:0px; }
+img{ border:0px; vertical-align:top}
+li{ list-style:none}
+body{ font-size:12px; font-family:\5B8B\4F53,Arial Narrow,arial,serif; height:100%; background-color:#d7ecff}
+a:link{ color:#2b2b2b;text-decoration:none; cursor:pointer;}
+a:visited{color:#2b2b2b;text-decoration:none;}
+a:hover{color:#ba2636;text-decoration:underline;}
+a:active{ color:#ba2636;}
+table tr td{ vertical-align:top;}
+img, div, a, span, li { behavior: url(/iepngfix.htc) }
+img{ vertical-align:top;}
+
+/*All Backgroud*/
+.wrap1{ background:url(../images/public/bg.jpg) repeat-x;}
+.warp2{ background:url(../images/public/top.jpg) no-repeat;}
+
+/*The Part Of Header*/
+
+#page_home #header ,
+#header{ margin:auto; width:1003px; height:185px; background:url(../images/public/head.png) no-repeat; _background:url(../images/public/head.gif) no-repeat;}
+#page_home #header .nav-area{ float:right; text-align:right; margin-top:4px; }
+#page_home #header .nav-area .user{ color:#4e4e4e; height:19px; padding-right:95px;}
+#page_home #header .nav-area .user a{ color:#4e4e4e; text-decoration:underline;}
+#page_home #header .nav-area .user a:hover{ color:#FFCC00; text-decoration:underline;}
+
+#page_home #header .link-outer{ clear:both; height:47px; padding-top:41px; padding-right:124px;}
+#page_home #header .link-outer .btn01{ background:url(../images/public/link01.jpg) no-repeat; width:113px; height:47px; border:0; padding:0;}
+#page_home #header .link-outer .btn02{ background:url(../images/public/link02.jpg) no-repeat; width:113px; height:47px; border:0; padding:0;}
+
+#page_home #header .main-nav { margin-top:16px; float:right; padding-right:25px;}
+#page_home #header .main-nav ul li{ float:left; width:112px; height:42px; line-height:42px;  text-align:center; font-size:14px; font-weight:bold; text-shadow:0 2px 1px #08439e;}
+#page_home #header .main-nav ul li a{ color:#d7edff; overflow:hidden; display:block; line-height:42px;}
+#page_home #header .main-nav ul li a:hover{ width:112px; background:url(../images/public/nav-checked.png) no-repeat;  _background:url(../images/public/nav-checked.jpg) no-repeat; color:#FFCC00; text-decoration:none; text-shadow:none; }
+#page_home #header .main-nav ul li.checked{ background:url(../images/public/nav-checked.png) no-repeat; _background:url(../images/public/nav-checked.jpg) no-repeat; width:112px; color:#FFFFFF}
+#page_home #header .main-nav ul li.no{ color:#ababab; text-shadow:none; filter:progid:dximagetransform.microsoft.basicimage(grayscale=1);}
+
+.cont-layout{ margin:auto; width:1003px; overflow:hidden;  margin-top:3px;}
+.cont-layout .top{ background:url(../images/public/layout-top.png) no-repeat; width:1003px; height:10px; overflow:hidden; }
+.cont-layout .btm{ background:url(../images/public/layout-btm.png) no-repeat; width:1003px; height:10px; }
+
+#container{ width:1003px; background:url(../images/public/layout-mid.png) repeat-y; overflow:hidden;}
+#container .wid{ width:950px; padding-left:30px;}
+.side-bg{ float:left; margin-left:30px; _ margin-left:15px; width:179px; }
+.side-bg .top{ background:url(../images/public/sidebar-top.jpg) no-repeat; width:179px; height:5px;}
+.side-bg .btm{ background:url(../images/public/sidebar-btm.jpg) no-repeat; width:179px; height:5px;}
+.sidebar{ background:url(../images/public/sidebar-mid.jpg) repeat-y; }
+.sidebar .twobar{ padding-left:6px;}
+.sidebar .twobar li{ line-height:30px; font-weight:bold; text-shadow:0 1px 1px #ffffff}
+.sidebar .twobar li.y{ padding-left:6px;}
+.sidebar .twobar li div{ padding-left:20px;}
+.sidebar .twobar li a{ color:#383d41; overflow:hidden; display:block;}
+.sidebar .twobar li a:hover{ width:169px; height:34px; background:url(../images/public/nav2-bg-checked.jpg) repeat-x; color:#FFFFFF; text-shadow:none; text-decoration:none;}
+.sidebar .twobar li .checked{ ackground:url(../images/public/nav2-bg-checked.jpg) repeat-x; color:#FFFFFF; }
+
+.sidebar .threebar{ padding-top:8px; padding-bottom:8px; border:solid 1px #b2c6d6; width:165px; background-color:#ffffff; }
+.sidebar .threebar li{ font-weight:normal; line-height:28px; }
+.sidebar .threebar li div{ padding-left:20px;}
+.sidebar .threebar li a{ height:25px; color:#086bc3; padding-left:20px; background:none; text-shadow:none; font-weight:bold;}
+.sidebar .threebar li a:hover{ width:144px; height:25px; color:#ffffff; background: url(../images/public/nav3-bg-checked.jpg) repeat-x; text-shadow:none; text-decoration:none;}
+.sidebar .threebar li a.checked{ color:#FFFFFF; text-shadow:none; background: url(../images/public/nav3-bg-checked.jpg) repeat-x;}
+.sidebar checked{color:#FFFFFF;}
+/*.sidebar .btm{ background:url(images/nav-btm-bg.jpg) repeat-x; width:169px; height:408px;}*/
+.side-btn{ width:16px; background-color:#fec808;}
+
+/*mainbody parts*/
+.mainbody{ float:left; margin-left:10px; }
+.adress{ font-weight:normal; hight:30px; line-height:30px; color:#5b5b5b; background:url(../images/icons/icon-adress.gif) no-repeat 0; padding-left:20px;}
+.mainbody .container{ width:828px; }
+.mainbody2{ border:1px solid #b1caed;}
+
+h3{ font-size:12px; color:#0a68bf}
+.icon-list{ background:url(../images/icons/icon-list.gif) no-repeat    ; padding-left:22px; hight:20px; line-height:20px;}
+.icon-column{ background:url(../images/icons/icon-column.gif) no-repeat 0 12px; padding-left:22px; hight:20px; line-height:20px;}
+/*.search-area{ padding-top:5px; border:solid 1px #9cbaec; background-color:#daebfc;}*/
+.grid{ padding:6px 0px 16px 0px }
+.second{ padding-top:12px;}
+
+#footer{ clear:both; margin-top:8px; height:28px; padding-top:12px; padding-bottom:8px; text-align:center; color:#3670b2; font-family:Arial, Helvetica, sans-serif; }
+
+/* #footer{ clear:both; margin-top:8px; height:27px; padding-top:18px; text-align:center; color:#daebfc; background:url(images/bottom-bg.jpg) repeat-x; font-family:Arial, Helvetica, sans-serif; }*/
+
+.clear-float{ clear:both;}
+
+/*ScoreAnalysisChart Page*/
+.mainbody .container2{ width:828px; border:1px solid #b1caed; background-color:#FFFFFF}
+.left-list{ float:left; width:545px; padding-top:10px; padding-left:15px; padding-right:5px; }
+.fold{ float:left; width:20px; margin-top:1px;}
+.left-list2{ float:left; width:690px; padding-top:10px; padding-left:15px; padding-right:5px; }
+
+.right-setting{ float:left; width:174px; border-left:1px solid #bfd7f9; background-color:#ecf6ff}
+.right-setting .tit{ height:27px; line-height:27px; font-size:12px; font-weight:bold; color:#0a68bf; padding-left:12px; background:url(../images/login/tit-set.jpg) repeat-x;}
+.right-setting .cont{ width:150px; margin:auto; padding-top:15px;}
+.right-setting .cont .caption{ padding-bottom:3px; padding-left:2px; color:#222627}
+
+.checkarea{ height:255px; overflow:auto; border:solid 1px #b6b6b6; background-color:#FFFFFF}
+.checkarea table{ width:100%}
+.checkarea table tr td{ padding-left:5px; color:#666666; line-height:22px; vertical-align:middle; height:22px;}
+.checkarea table tr.odd{ }
+.checkarea table tr.even{ background-color:#e9e9e9}
+.checkarea table tr.mouseover{ background-color:#d9ebf5; color:#333333}
+
+/*icon of navgation*/
+.navbar01{ background: url(../images/icons/navbar01.png) no-repeat 18px 10px;}/*首页*/
+.navbar02{ background: url(../images/icons/navbar05.png) no-repeat 4px 10px;}/*学生信息*/
+.navbar03{ background: url(../images/icons/navbar04.png) no-repeat 4px 10px;}/*用户管理*/
+.navbar04{ background: url(../images/icons/navbar02.png) no-repeat 4px 10px;}/*考试管理*/
+.navbar05{ background: url(../images/icons/navbar03.png) no-repeat 4px 10px;}/*德育管理*/
+.navbar06{ background: url(../images/icons/navbar06.png) no-repeat 4px 10px;}/*教学分析*/
+
+/*StudentInfo*/
+.sig-icon01{ background:url(../images/icons/s-icon05.gif) no-repeat 0 6px;}/*学生成长记录*/
+.sig-icon02{ background:url(../images/icons/s-icon01.gif) no-repeat 0 6px;}/*学生信息管理*/
+.sig-icon03{ background:url(../images/icons/s-icon04.gif) no-repeat 0 6px;}/*同层面排位对比*/
+.sig-icon04{ background:url(../images/icons/s-icon03.gif) no-repeat 0 6px;}/*成绩分析图表*/
+.sig-icon05{ background:url(../images/icons/s-icon02.gif) no-repeat 0 6px;}/*个人成绩单*/
+.sig-icon06{ background:url(../images/icons/s-icon08.gif) no-repeat 0 6px;}/*奖励情况*/
+.sig-icon07{ background:url(../images/icons/s-icon09.gif) no-repeat 0 6px;}/*教师评价结果*/
+.sig-icon08{ background:url(../images/icons/s-icon06.gif) no-repeat 0 6px;}/*出勤情况*/
+.sig-icon09{ background:url(../images/icons/s-icon07.gif) no-repeat 0 6px;}/*违纪情况*/
+
+/*ExaminationgManagement*/
+/*.em-icon01{ background:url(../images/icons/s-icon02.gif) no-repeat 0 6px;}
+.em-icon02{ background:url(../images/icons/s-icon11.gif) no-repeat 0 6px;}
+.em-icon03{ background:url(../images/icons/s-icon20.gif) no-repeat 0 6px;}
+.em-icon04{ background:url(../images/icons/s-icon10.gif) no-repeat 0 6px;}
+.em-icon05{ background:url(../images/icons/s-icon12.gif) no-repeat 0 6px;}
+.em-icon06{ background:url(../images/icons/s-icon18.gif) no-repeat 0 6px;}
+.em-icon07{ background:url(../images/icons/s-icon19.gif) no-repeat 0 6px;}
+.em-icon08{ background:url(../images/icons/s-icon17.gif) no-repeat 0 6px;}
+.em-icon09{ background:url(../images/icons/s-icon13.gif) no-repeat 0 6px;}
+.em-icon10{ background:url(../images/icons/s-icon14.gif) no-repeat 0 6px;}
+.em-icon11{ background:url(../images/icons/s-icon15.gif) no-repeat 0 6px;}
+
+.em-icon12{ background:url(../images/icons/s-icon01.gif) no-repeat 0 6px;}
+.em-icon13{ background:url(../images/icons/s-icon02.gif) no-repeat 0 6px;}
+.em-icon14{ background:url(../images/icons/s-icon03.gif) no-repeat 0 6px;}
+.em-icon15{ background:url(../images/icons/s-icon04.gif) no-repeat 0 6px;}*/
+
+
+.em-icon01{ background:url(../images/icons/s-icon33.gif) no-repeat 0 6px;}/*录入成绩管理*/
+.em-icon02{ background:url(../images/icons/s-icon34.gif) no-repeat 0 6px;}/*科目信息*/
+.em-icon03{ background:url(../images/icons/s-icon11.gif) no-repeat 0 6px;}/*考试活动*/
+.em-icon04{ background:url(../images/icons/s-icon35.gif) no-repeat 0 6px;}/*科目管理*/
+.em-icon05{ background:url(../images/icons/s-icon40.gif) no-repeat 0 6px;}/*考试信息*/
+.em-icon06{ background:url(../images/icons/s-icon13.gif) no-repeat 0 6px;}/*学生成绩跟踪*/
+.em-icon07{ background:url(../images/icons/s-icon36.gif) no-repeat 0 6px;}/*学生成绩单*/
+.em-icon08{ background:url(../images/icons/s-icon05.gif) no-repeat 0 6px;}/*成绩分析图表*/
+.em-icon09{ background:url(../images/icons/s-icon12.gif) no-repeat 0 6px;}/*学生成绩统计*/
+.em-icon010{ background:url(../images/icons/s-icon17.gif) no-repeat 0 6px;}/*学生分数与排名*/
+.em-icon011{ background:url(../images/icons/s-icon19.gif) no-repeat 0 6px;}/*科目成绩*/
+.em-icon012{ background:url(../images/icons/s-icon21.gif) no-repeat 0 6px;}/*各科汇总*/
+
+/*EthicalEduManagement*/
+.eem-icon01{ background:url(../images/icons/s-icon23.gif) no-repeat 0 6px;}/*奖惩管理*/
+.eem-icon02{ background:url(../images/icons/s-icon21.gif) no-repeat 0 6px;}/*课堂管理*/
+.eem-icon03{ background:url(../images/icons/s-icon22.gif) no-repeat 0 6px;}/*条例管理*/
+
+/*.eem-icon04{ background:url(../images/icons/s-icon05.gif) no-repeat 0 6px;}
+.eem-icon05{ background:url(../images/icons/s-icon06.gif) no-repeat 0 6px;}
+.eem-icon06{ background:url(../images/icons/s-icon07.gif) no-repeat 0 6px;}
+.eem-icon07{ background:url(../images/icons/s-icon08.gif) no-repeat 0 6px;}
+.eem-icon08{ background:url(../images/icons/s-icon09.gif) no-repeat 0 6px;}*/
+
+/*UserInfo*/
+.ui-icon01{ background:url(../images/icons/s-icon27.gif) no-repeat 0 6px;}/*用户权限*/
+.ui-icon02{ background:url(../images/icons/s-icon29.gif) no-repeat 0 6px;}/*用户管理*/
+.ui-icon03{ background:url(../images/icons/s-icon25.gif) no-repeat 0 6px;}/*教师档案管理*/
+.ui-icon04{ background:url(../images/icons/s-icon24.gif) no-repeat 0 6px;}/*学生档案管理*/
+.ui-icon05{ background:url(../images/icons/s-icon31.gif) no-repeat 0 6px;}/*权限设置*/
+.ui-icon06{ background:url(../images/icons/s-icon30.gif) no-repeat 0 6px;}/*参数设置*/
+.ui-icon07{ background:url(../images/icons/s-icon32.gif) no-repeat 0 6px;}/*组织设置*/
+.ui-icon08{ background:url(../images/icons/jskq.gif) no-repeat 0 6px;}/*教师考勤*/
+.ui-icon09{ background:url(../images/icons/ktap.gif) no-repeat 0 6px;}/*课堂安排*/
+.ui-icon010{ background:url(../images/icons/rkap.png) no-repeat 0 6px;}/*任课安排*/
+.ui-icon011{ background:url(../images/icons/zxsj.gif) no-repeat 0 6px;}/*作息时间*/
+.ui-icon012{ background:url(../images/icons/s-icon32.gif) no-repeat 0 6px;}/*任课安排*/
+.ui-icon013{ background:url(../images/icons/jsjxgl.png) no-repeat 0 6px;}/*教师绩效管理*/
+.ui-icon014{ background:url(../images/icons/jwgl.png) no-repeat 0 6px;}/*教务管理*/
+
+/*teaching quantity to analyze*/
+.tq-icon01{ background:url(../images/icons/s-icon38.gif) no-repeat 0 6px;}/*教学质量分析*/
+.tq-icon02{ background:url(../images/icons/s-icon12.gif) no-repeat 0 6px;}/*各班学生成绩分析*/
+.tq-icon03{ background:url(../images/icons/s-icon37.gif) no-repeat 0 6px;}/*各科积分汇总*/
+

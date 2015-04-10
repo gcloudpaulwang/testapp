@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="com.sp.public" namespace="/public" extends="struts-default">
+		<action name="loginInput" method="loginInput" class="com.sp.action.SysAct">
+				<result>${tplPath}</result>
+		</action>
+		<action name="login" method="login" class="com.sp.action.SysAct">
+				<result type="json"/>
+		</action>
+		<action name="test" method="test" class="com.sp.action.SysAct">
+				<result type="json"/>
+		</action>
+		<action name="test2" method="test2" class="com.sp.action.SysAct">
+				<result type="json"/>
+		</action>
+		<action name="logout" method="logout" class="com.sp.action.SysAct">
+				<result>${tplPath}</result>
+		</action>					
+	</package>
+</struts>

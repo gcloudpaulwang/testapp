@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>${(aokProperties.webTitle)!}</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<style media="print">
+        .Noprint
+        {
+            display: none;
+        }
+        .PageNext
+        {
+            page-break-after: always;
+        }
+    </style>
+	<style type="text/css">
+		.order-tb{
+			border:1px solid blue;
+			width:700px;
+			table-layout:fixed;word-wrap:break-word;word-break:break-all;
+		}	
+		.order-tb tr td{
+			border:1px solid blue;
+			text-align: center;
+		}
+		.NOPRINT
+        {
+            font-family: "宋体";
+            font-size: 12px;
+        }
+    </style>
+  </head>
+  
+  <body>
+  <#if jsonRoot.exception??>
+  	<p>${jsonRoot.exception!}</p>
+  <#else>  
+  <#list jsonRoot.orders as order>
+  <table style="width:700px;">
+  <tr>
+  <td style="text-align: center;font-size: 30px;"><b>A-OK 果色-蛋糕订单表</b></td><td style="text-align: right;"> NO:${order.orglNo!}</td></tr>
+  </table>
+   <table class="order-tb" border="1" cellpadding="0" cellspacing="0" rules="cols">
+   		<tr>
+   			<td width="100px">下单分店</td>
+   			<td>${order.placeStoreName!}</td>
+   			<td>取货门店</td>
+   			<td colspan="3" width="350px">${order.takeStoreName!}</td>
+   		</tr>
+   		<tr>
+   			<td>落单时间</td>
+   			<td colspan="5">${order.placeDate?string("yyyy-MM-dd HH:mm")!}</td>
+   		</tr>
+   		<tr>
+   			<td>客人取货</td>
+   			<td colspan="5">${order.takeDate?string("yyyy-MM-dd")!} ${order.takeTime!}</td>
+   		</tr>
+   		<tr>
+   			<td rowspan="2">蛋糕品种</td>
+   			<td rowspan="2">${order.cakeName!}</td>
+   			<td rowspan="2">尺寸</td>
+   			<td rowspan="2">${order.cakeSize!}</td>
+   			<td rowspan="2">款色</td>
+   			<td>原味<#if order.bfCode=='原味'><img src="../../images/icons/checked.png" width="20px" height="20px"/>
+   			<#else><img src="../../images/icons/unchecked.png" width="20px" height="20px"/></#if>
+   			团购<#if order.bfCode=='团购'><img src="../../images/icons/checked.png" width="20px" height="20px"/>
+   			<#else><img src="../../images/icons/unchecked.png" width="20px" height="20px"/></#if></td>
+   		</tr>
+   		<tr>
+   			<td >裱花编号：<br/><#if order.bfCode!='团购'&&order.bfCode!='原味'><br/>${order.bfCode!}</#if></td>
+   		</tr>
+   		<tr>
+   			<td rowspan="2">贺词</td>
+   			<td colspan="3" rowspan="2">${order.greeting!}</td>
+   			<td colspan="2">特别要求</td>
+   		</tr>
+   		<tr>
+   			<td colspan="2" height="50px" style="min-height: 50px">${order.request!}</td>
+   		</tr>
+   		<tr>
+   			<td>客人资料</td>
+   			<td>姓名:${order.customerName!}</td>
+   			<td>电话</td>
+   			<td colspan="3">${order.customerTel!}</td>
+   		</tr>
+   		<tr>
+   			<td rowspan="2">门店电话</td>
+   			<td rowspan="2">${order.placeStoreTel!}</td>
+   			<td rowspan="2">经手人</td>
+   			<td rowspan="2">${order.operator!}</td>
+   			<td rowspan="2">是否已支付</td>
+   			<td>是 <#if order.hasPaid??&&order.hasPaid==true><img src="../../images/icons/checked.png" width="20px" height="20px"/><#else><img src="../../images/icons/unchecked.png" width="20px" height="20px"/></#if>  
+   			否 <#if !(order.hasPaid??)||order.hasPaid==false><img src="../../images/icons/checked.png" width="20px" height="20px"/><#else><img src="../../images/icons/unchecked.png" width="20px" height="20px"/></#if></td>
+   		</tr>
+   		<tr>
+   			<td >订金：${order.deposit!}</td>
+   		</tr>
+   </table>
+    <hr align="center" width="600px" size="1" noshade class="NOPRINT">
+    <!--分页-->
+    <div class="PageNext">
+    </div>
+  </#list>
+  </#if>
+  </body>
+</html>

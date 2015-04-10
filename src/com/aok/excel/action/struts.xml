@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="com.aok.user.excel" namespace="/excel" extends="struts-default">
+		<action name="export" method="export" class="com.aok.excel.action.ExcelAction">
+			<result type="json" />
+		</action>
+		
+	</package>
+	
+</struts>

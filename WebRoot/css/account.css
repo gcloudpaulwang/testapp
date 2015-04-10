@@ -1,0 +1,29 @@
+/* CSS Document */
+
+*{ padding:0px; margin:0px; }
+img{ border:0px; vertical-align:top}
+li{ list-style:none}
+body{ font-size:12px; font-family:\5B8B\4F53,Arial Narrow,arial,serif; height:100%; }
+a:link{ color:#2b2b2b;text-decoration:none;}
+a:visited{color:#2b2b2b;text-decoration:none;}
+a:hover{color:#ba2636;text-decoration:underline;}
+a:active{ color:#ba2636;}
+table tr td{ vertical-align:middle; padding-top:6px;}
+
+.aa-wrap{ width:452px; height:600px; overflow:hidden; margin:auto; background:url(../images/account/account-bg.jpg) no-repeat; }
+
+.aa-wrap .close-area{ padding-top:22px;  padding-right:15px; height:22px; text-align:right;}
+.aa-wrap .btn-close{ background:url(../images/account/btn-close.gif) no-repeat; border:none; width:21px; height:21px; cursor:pointer;}
+
+.aa-wrap .container{ padding-top:100px; overflow:hidden; width:340px; margin:auto;}
+.aa-wrap .container table{}
+.aa-wrap .container table tr td{ height:40px; line-height:30px;}
+.aa-wrap .container .text{ background:url(../images/account/text.gif) no-repeat; width:194px; height:31px; border:none; line-height:31px; padding-left:6px; }
+.aa-wrap .container .textarea{ width:275px; height:80px;}
+.aa-wrap .container .btn{ width:121px; height:35px; border:none; background:url(../images/account/btn-submit.gif) no-repeat; cursor:pointer;}
+.aa-wrap .container .mark{ color:#FF0000}
+.aa-wrap .container .loc{ text-align:right; padding-right:4px;}
+/*<!--.aa-wrap .container table tr.pad{ padding-top:5px;}-->*/
+
+.aa-wrap .btm{ text-align:center; margin-top:18px;}
+.aa-wrap .btm p{ height:24px; line-height:24px;}

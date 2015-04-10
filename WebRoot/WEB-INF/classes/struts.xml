@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<include file="com/sp/action/struts.xml"/>
+	<include file="com/sp/user/action/struts.xml"/>
+	<include file="com/aok/action/struts.xml"/>
+	<include file="com/aok/user/action/struts.xml"/>
+	<include file="com/aok/excel/action/struts.xml"/>
+	<include file="com/aok/base/action/struts.xml"/>
+	<include file="com/aok/order/action/struts.xml"/>
+	<include file="com/aok/shipment/action/struts.xml"/>
+</struts>

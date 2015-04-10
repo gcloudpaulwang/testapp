@@ -1,0 +1,17 @@
+/* CSS Document */
+.home-bg{ background:url(../images/home/home-bg.jpg) no-repeat; width:943px; height:722px; margin:auto; margin-bottom:22px;}
+.home-bg .text{  margin:auto; width:860px; padding-top:52px;}
+.home-bg .text p{font-size:14px; text-indent:2em; line-height:24px;}
+.home-bg .layout{ padding-left:9px; padding-top:36px; line-height:24px;}
+.home-bg .layout p{ text-indent:2em; padding-top:5px;}
+.home-bg .layout div{ float:left; width:297px;}
+.home-bg .layout .fuction01{ background:url(../images/home/fuction01.jpg) no-repeat; padding-top:265px;}
+.home-bg .layout .fuction01 h4{ background:url(../images/home/icon01.gif) no-repeat 0px 4px;}
+.home-bg .layout .fuction02{ margin-left:17px; background:url(../images/home/fuction02.jpg) no-repeat; padding-top:265px;}
+.home-bg .layout .fuction02 h4{ background:url(../images/home/icon02.gif) no-repeat 0 4px; }
+.home-bg .layout .fuction03{ margin-left:17px; background:url(../images/home/fuction03.jpg) no-repeat; padding-top:265px;}
+.home-bg .layout .fuction03 h4{ background:url(../images/home/icon03.gif) no-repeat 0 4px;}
+
+.home-bg .layout .fuction01 .warp,.home-bg .layout .fuction02 .warp,.home-bg .layout .fuction03 .warp{  width:256px; padding-left:22px;}
+.warp p{}
+.home-bg .layout .fuction01 h4,.home-bg .layout .fuction02 h4,.home-bg .layout .fuction03 h4{ font-size:12px; margin-left:25px; overflow:hidden; padding-left:22px;}

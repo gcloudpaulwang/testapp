@@ -1,0 +1,61 @@
+@import "themes-window.css";
+/* ExtJS Extend Window */
+.x-panel-tl,
+.x-panel-tr{ background:url(../images/themes/panel/corners-sprite.gif) no-repeat;}
+.x-panel-tc
+{
+	border: 0px solid #B6C6D5;
+	background: #E1F1FF url("../images/public/sidebar-top.jpg") no-repeat scroll 0 0;
+}
+.x-panel-tl { border-bottom-color: #B6C6D5; border-bottom-width:1px; }
+.x-panel-tr { background-position: right 0; }
+.x-panel-tc { background-image: none; }
+.x-panel .x-panel-tl {/* border-left-width:1px; border-right-width:1px;*/ }
+.x-panel .x-panel-tc { border-top:1px solid #B6C6D5; }
+
+.x-grid-panel .x-panel-header,.x-panel-header { background: #E1F1FF; }
+
+.x-panel .x-panel-header icon-grid,
+.x-grid-panel .x-panel-header icon-grid,
+.x-grid-panel .x-panel-tl .x-panel-icon {
+	background: url("../images/icons/icon-list.gif") no-repeat scroll 0 4px transparent;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 20px;
+}
+.x-grid-panel .x-panel-header icon-grid .menu-tit-head, .x-grid-panel .x-panel-tl .x-panel-icon .menu-tit-head {background:transparent;padding:0;}
+
+.x-window .x-tab-panel .x-tab-panel-header { border:0 none;}
+
+.x-panel-ml,
+.x-panel-mr,
+.x-panel-mc {
+    background: #E1F1FF url("../images/public/sidebar-mid.jpg") repeat-y scroll 0 0;
+}
+.x-panel-mc { background-image: none; }
+.x-panel-mr { background-position: right 0; }
+
+.x-panel-bl,
+.x-panel-br,
+.x-panel-bc {
+    background: #E1F1FF url("../images/public/sidebar-btm.jpg") no-repeat scroll 0 bottom;
+}
+.x-panel-bc { background-image: none; border-bottom: 1px solid #B6C6D5; }
+.x-panel-br { background-position: right bottom; }
+
+.x-panel-nofooter .x-panel-bl,
+.x-panel-nofooter .x-panel-br { height:5px!important; }
+.x-panel-nofooter .x-panel-bc { height:4px!important; }
+
+.x-toolbar { background: #E1F1FF none; }
+
+.x-window-tl .x-window-header-text {
+	line-height:20px;
+	padding-left:25px;
+    background-image:url(../images/icons/shape_ungroup.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+/*formpanel button*/
+.formpanel-btn-especial{ background:url(../images/icons/btn-especial.png) no-repeat; width:75px;}

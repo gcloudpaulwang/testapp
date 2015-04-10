@@ -1,0 +1,405 @@
+/* CSS Document */
+
+
+
+*{ padding:0px; margin:0px; }
+
+img{ border:0px; vertical-align:top}
+
+li{ list-style:none}
+
+body{ font-size:12px; font-family:\5B8B\4F53,Arial Narrow,arial,serif; height:100%; background:url(/SchoolManageSystem/css/images/login/bg.jpg) repeat-x;}
+
+a:link{ color:#2b2b2b;text-decoration:none;}
+
+a:visited{color:#2b2b2b;text-decoration:none;}
+
+a:hover{color:#ba2636;text-decoration:underline;}
+
+a:active{ color:#ba2636;}
+
+table tr td{ vertical-align:middle; padding-top:6px;}
+
+
+
+.wrap{ background:url(/SchoolManageSystem/css/images/login/bg2.jpg) no-repeat top center;}
+
+.header{ width:936px; margin:auto; height:122px;}
+
+.headlink{ text-align:right; padding-top:15px; padding-right:65px; }
+
+/*.header a{ width:60px; display:block;}*/
+
+
+
+.container{ width:955px; height:393px; margin:auto; background:url(/SchoolManageSystem/css/images/login/login-area.png) no-repeat;}
+
+/*
+
+.banner{ float:left; margin-left:18px; margin-top:30px; display: inline;position: relative;}
+
+.banner .nav{ border:solid 1px #adaba5; position: relative;}
+
+.banner .point{ margin-top:20px; }
+
+.banner .point ul{ width:300px; margin-left:140px;}
+
+.banner .point ul li{ width:14px; height:14px; background:url(/SchoolManageSystem/css/images/login/pointer.jpg) no-repeat scroll left top transparent; float:left; margin-left:30px; cursor: pointer; display: inline;}
+
+.banner .point ul li.on{ background-position: right top;}*/
+
+
+
+.login{ display: inline; float: right; width:290px; height:370px; margin-right:20px;}
+
+.before-login{ margin-top:26px; padding-left:10px;}
+
+.before-login .title{ background:url(/SchoolManageSystem/css/images/login/login-title.png) no-repeat; width:240px; height:47px;}
+
+.before-login .cont{}
+
+.before-login .text{ background:url(/SchoolManageSystem/css/images/login/text-bg.png) no-repeat transparent; width:231px; height:34px; line-height:34px; border:none; overflow: hidden; padding-left:6px;}
+
+.before-login .text-code{ background:url(/SchoolManageSystem/css/images/login/text-code.png) no-repeat transparent; width:150px; height:34px; line-height:34px; border:none; overflow: hidden; padding-left:6px;}
+
+.before-login .coding{ width:75px; height:34px; }
+
+.before-login label.lab-user, .before-login label.lab-pwd{ height:24px; line-height:24px; display: block; margin-top:10px;} 
+
+.before-login label.lab-prompt{ height:24px; line-height:24px; color:#FF0000; display: block; margin-top:6px;}
+
+.before-login .submit{ margin-top:6px;}
+
+.before-login .submit .btn{ background:url(/SchoolManageSystem/css/images/login/btn-login.png) no-repeat; width:116px; height:42px; border:none; cursor:pointer;}
+
+.before-login .submit .rember{ display:inline; height:14px ;width:14px;}
+
+.before-login .submit label.rember{ height:20px; line-height:20px; text-indent:3px;}
+
+.before-login .submit .forget{ padding-left:20px;}
+
+.before-login .submit .forget a{ color:#2A1FFF; text-decoration:underline}
+
+.before-login .info{ height:24px; height:24px; margin-top:26px; color:#0e4255; padding-left:25px;}
+
+
+
+.after-login{ margin-top:8px; background:url(/SchoolManageSystem/css/images/login/after-bg.jpg) no-repeat left top; width:264px; }
+
+.after-login p.out{  height:20px; padding-top:15px;}
+
+.after-login p.hi{ padding-top:42px; padding-left:8px; color:#c1611a; font-size:16px; height:24px;}
+
+.after-login p.img{ border:solid 1px #adaba5; width:102px; height:125px; margin:auto; margin-top:12px;}
+
+.after-login p.welcome{ padding-top:30px; padding-left:35px; color:#11526d; font-size:20px; font-weight:bold; height:30px}
+
+.after-login p.notice{ padding-top:10px; padding-left:35px; color:#10026d; font-size:12px; font-weight:bold; height:20px}
+
+.after-login p.time{ padding-top:8px; padding-left:40px; height:20px; color:#838383}
+
+
+
+.product{ clear:both; width:1000px; margin:auto; margin-top:20px;}
+
+.product ul li{ float:left; width:140px; text-align:center;}
+
+
+
+.footer{ clear:both; width:960px; margin:auto; margin-top:20px;}
+
+.footer div{ float:left; overflow:hidden;}
+
+.footer .pic{ width:220px; margin-top:5px;}
+
+.footer .remark{ width:520px;}
+
+.footer .remark p{ height:26px; line-height:26px; text-align:center; font-family:Arial, Helvetica, sans-serif;}
+
+/*.footer .remark p a{ color:#003a5f}*/
+
+
+
+.clear-float{ clear:both;}
+
+
+
+/*popup*/
+
+.tips {
+
+    display: none;
+
+    height: 90px;
+
+    left: 0;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    text-align: left;
+
+    top: 0;
+
+    width: 129px;
+
+    z-index: 350;
+
+}
+
+.tips .tips_bg, .tips .tips_main {
+
+    left: 0;
+
+    position: absolute;
+
+    top: 0;
+
+}
+
+.tips .tips_bg {
+
+    background:url(/SchoolManageSystem/css/images/login/gameTip.png) no-repeat scroll 0 0 transparent;
+
+    height: 100%;
+
+    width: 100%;
+
+    z-index: 1;
+
+}
+
+.tips .tips_main {
+
+	width:110px;
+
+    line-height: 18px;
+
+    padding: 8px 0 0 10px;
+
+    z-index: 2;
+
+}
+
+.banner {
+
+    display: inline;
+
+    float: left;
+
+    height: 340px;
+
+/*    margin: 6px 0 0 37px;*/
+
+    position: relative;
+
+    width: 597px;
+
+}
+
+.banner ul, .banner li {
+
+    list-style: none outside none;
+
+}
+
+.banner .nav {
+
+    border: 1px solid #A8A071;
+
+    height: 280px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    width: 595px;
+
+	margin-top:30px;
+
+	margin-left:20px;
+
+}
+
+.banner .nav ul {
+
+    height: 310px;
+
+    left: 0;
+
+    position: absolute;
+
+    top: 0;
+
+    width: 700%;
+
+}
+
+.banner .nav ul li {
+
+    float: left;
+
+    height: 280px;
+
+    overflow: hidden;
+
+    width: 595px;
+
+}
+
+.banner ul.nav_point {
+
+    height: 14px;
+
+    margin: 22px auto 0;
+
+    width: 180px;
+
+}
+
+.banner ul.nav_point li {
+
+    background: url("/SchoolManageSystem/css/images/login/pointer.jpg") no-repeat scroll left top transparent;
+
+    cursor: pointer;
+
+    display: inline;
+
+    float: left;
+
+    height: 14px;
+
+    margin: 0 7px;
+
+    width: 14px;
+
+}
+
+.banner ul.nav_point li.on, .banner ul.nav_point li.hover {
+
+    background-position: right top;
+
+}
+
+
+
+.gamelist {
+
+    height: 116px;
+
+    list-style: none outside none;
+
+}
+
+.gamelist li {
+
+    float: left;
+
+    height: 116px;
+
+    position: relative;
+
+    width: 116px;
+
+}
+
+/*.gamelist li span {
+
+    height: 80px;
+
+    left: 0;
+
+    position: absolute;
+
+    top: 0;
+
+    width: 92px;
+
+    z-index: 1;
+
+}*/
+
+.gamelist li a {
+
+    height: 68px;
+
+    left: 12px;
+
+    position: absolute;
+
+    top: 0;
+
+    width: 68px;
+
+    z-index: 2;
+
+}
+
+/*.gamelist li.mole span {
+
+    background: url("http://www.61.com/images/gameicon/mole.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.seer span {
+
+    background: url("http://www.61.com/images/gameicon/seer.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.seer2 span {
+
+    background: url("/images/gameicon/seer2.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.gf span {
+
+    background: url("http://www.61.com/images/gameicon/gf.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.hua span {
+
+    background: url("http://www.61.com/images/gameicon/hua.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.hero span {
+
+    background: url("http://www.61.com/images/gameicon/hero.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.haqi span {
+
+    background: url("http://www.61.com/images/gameicon/haqi.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.doudou span {
+
+    background: url("/images/gameicon/doudou.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.game2125 span {
+
+    background: url("http://www.61.com/images/gameicon/2125.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.ddt span {
+
+    background: url("http://www.61.com/images/gameicon/ddt.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.gamelist li.renzhe span {
+
+    background: url("http://www.61.com/images/gameicon/renzhe.png") no-repeat scroll 0 0 transparent;
+
+}
+
+*/

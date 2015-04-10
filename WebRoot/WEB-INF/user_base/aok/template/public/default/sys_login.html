@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="  ext-strict" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+<title>登录_${(spProperties.webTitle)!}</title>
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+<link rel="stylesheet" type="text/css" href="../css/account.css">
+<link rel="stylesheet" type="text/css" href="../css/thickbox.css">
+<script language="javascript" type="text/javascript" src="../scripts/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../scripts/thickbox-compressed.js"></script>
+<script type="text/javascript">
+	if(top!=self)
+		top.location = self.location;
+</script>
+<script language="javascript" type="text/javascript">
+ function freshImage(){
+ 	var imgstr = $("#imgstr");   
+	imgstr.attr("src","../checkCode.svl?random=" + Math.random());
+ }
+</script>
+
+</head>
+<body class="   ext-gecko ext-gecko3">
+<form id="">
+<div class="wrap">
+	<div class="header">
+    	
+    </div>
+	
+    <!---->
+    <div class="container">
+    	<div class="banner">
+        	<div class="nav">
+            	<ul id="J_navBox">
+                	<li class="on"><a href="#"><img src="../images/login/banner01.jpg"></a></li>
+                </ul>
+            </div>
+			
+        </div>
+        <div class="login">
+        	<div style="display: block;" class="before-login">
+            	<div class="title"></div>
+        		<div class="cont">
+                	<label class="lab-user">帐号：</label>
+                    <div><input name="username" id="username" title="用户名不能为空" class="text" tabindex="1" type="text"></div>
+                    <label class="lab-pwd">密码：</label>
+                    <div><input name="password" id="password" title="密码不能为空" class="text" tabindex="2" type="password"></div> 
+                    <!--  <label class="lab-pwd">验证码：</label>
+                    <div><input name="validatecode" id="validatecode" maxlength="6" title="验证码不能为空" class="text-code" tabindex="3" type="text"><label class="coding"><a href="javascript:freshImage()" title="看不清点击换一张"><img id="imgstr" src="images/login/validNumGenerate.jpeg" height="33" width="75"></a></label></div> 
+                    -->  
+                    <label class="lab-prompt" style="display:none" id="span1">错误提示：</label>      
+               </div>
+               <div class="submit">
+               		<table border="0" cellpadding="0" cellspacing="0">
+                    	<tbody><tr>
+                        	<td>
+							<input id="btn-login" class="btn" type="button">
+							<input id="iflogin" value="0" type="hidden">
+							</td>
+                            <td></td>
+                          	<!--<td style=" padding-left:10px;">  <input value="" name="rember" class="rember"  id="rember" type="checkbox"></td>
+                           	<td><label class="rember" for="rember">记住我</label> </td>-->
+                        </tr>
+                    </tbody></table> 
+               </div>
+            </div>
+            <!--after login-->
+        </div>
+    </div>
+    <div style="display: none; left: 799px; top: 455px;" id="J_gameTips" class="tips">
+        <div class="tips_bg"></div>
+        <div class="tips_main">${(spProperties.webTitle)!}</div>
+    </div>
+     <!--footer-->
+    <div class="footer">
+    	<div class="pic"></div>
+      <div class="remark">
+            <p>增值电信业务许可经营证：${(spProperties.webIcp)!}</p>
+            <p><a href="../public/readme.doc">用户手册下载</a></p>
+      </div>
+        <div class="pic"></div>
+    </div>
+    <div class="clear-float"></div>
+</div>
+</form>
+<script type="text/javascript" src="../scripts/login.js"></script>
+
+
+</body></html>

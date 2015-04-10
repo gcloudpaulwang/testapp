@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+					http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+					http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+					http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-lazy-init="true">
+	
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+		<list>
+			<value>classpath:jdbc.properties</value>
+			<value>classpath:aok.properties</value>
+		</list>
+		</property>
+		<property name="fileEncoding" value="UTF-8"/>  
+	</bean>
+	<bean id="aokProperties" class="com.aok.common.AokProperties">
+		<property name="webTitle" value="${web.title}"/>
+		<property name="webIcp" value="${web.ICP}"/>
+		<property name="cakeOrderIdPerfix" value="${cake.order.id.perfix}"/>
+		<property name="accessoryOrderIdPerfix" value="${accessory.order.id.perfix}"/>
+		<property name="cakeOrderIdLen" value="${cake.order.id.len}"/>
+		<property name="accessoryOrderIdLen" value="${accessory.order.id.len}"/>
+		<property name="deadline" value="${deadline}"/>
+		<property name="first" value="${first}"/>
+		<property name="second" value="${second}"/>
+	</bean>
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="autoCommitOnClose" value="true"/>
+		<property name="checkoutTimeout" value="${cpool.checkoutTimeout}"/>
+		<property name="initialPoolSize" value="${cpool.minPoolSize}"/>
+		<property name="minPoolSize" value="${cpool.minPoolSize}"/>
+		<property name="maxPoolSize" value="${cpool.maxPoolSize}"/>
+		<property name="maxIdleTime" value="${cpool.maxIdleTime}"/>
+		<property name="acquireIncrement" value="${cpool.acquireIncrement}"/>
+		<property name="maxIdleTimeExcessConnections" value="${cpool.maxIdleTimeExcessConnections}"/>		
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:/com/sp/user/entity</value>
+				<value>classpath:/com/sp/common/entity</value>
+				<value>classpath:/com/aok/user/entity</value>
+				<value>classpath:/com/aok/entity</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+				hibernate.query.substitutions=true 1, false 0
+				hibernate.jdbc.fetch_size=25
+				hibernate.jdbc.batch_size=20
+				hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider
+				hibernate.cache.provider_configuration_file_resource_path=/ehcache-hibernate.xml
+				hibernate.show_sql=true
+				hibernate.format_sql=true
+				hibernate.cache.use_query_cache=true
+			</value>
+		</property>
+		<property name="entityInterceptor">
+			<ref local="treeInterceptor" />
+		</property>
+	</bean>
+	<bean id="treeInterceptor" class="com.sp.common.hibernate3.TreeIntercptor" />
+	<context:component-scan base-package="com.sp"/>
+	<context:component-scan base-package="com.aok"/>
+	
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="txManager" />
+</beans>

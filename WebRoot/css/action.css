@@ -1,0 +1,55 @@
+.clear-float{ clear:both;}
+
+.menu-tit-head{ 
+height:16px; line-height:16px;
+background:url(../images/icons/icon-list.gif) no-repeat; padding-left:20px;
+}
+.add{
+	background-image: url('../images/icons/fam/add.png') !important;
+}
+.delete{
+	background-image:url('../images/icons/fam/delete.gif') !important;
+}
+.disabled{
+	background-image:url('../images/icons/fam/disabled.png') !important;
+}
+.edit{
+	background-image: url('../images/icons/fam/edit.png') !important;
+}
+.save{
+	background-image: url('../images/icons/fam/save.gif') !important;
+}
+.import{
+	background-image: url('../images/icons/fam/import.png') !important;
+}
+.export{
+	background-image: url('../images/icons/fam/export.png') !important;
+}
+.category-set{
+	background-image: url('../images/icons/fam/cog.png') !important;
+}
+.release{
+	background-image: url('../images/icons/fam/release.gif') !important;
+}
+.find{
+	background-image: url('../images/icons/fam/look-detail.gif') !important;
+}
+.upload{
+	background-image: url('../images/icons/fam/import.png') !important;
+}
+.sync{
+	background-image: url('../images/icons/fam/table_refresh.gif') !important;
+}
+.clon {
+    background-image:url('../images/icons/fam/release.gif') !important;
+ }
+ 
+ /*add to 2011-09-20*/
+ .parent{ background-image:url('../images/icons/fam/parent.png') !important;}
+ .resume{ background-image:url('../images/icons/fam/vcard.png') !important;}
+ .rewards{ background-image:url('../images/icons/fam/rewards.png') !important;}
+ .state_change{ background-image:url('../images/icons/fam/state_change.png') !important;}
+ 
+ .upload-avatar{
+  	background-image:url('../images/icons/arrow-up.gif') !important;
+  }
