@@ -1,6 +1,6 @@
 # VERSION 0.0.1
 # 默认ubuntu server长期支持版本，当前是12.04
-FROM ubuntu
+FROM consol/tomcat-7.0
 # 签名啦
 MAINTAINER paulwang "165413958@qq.com"
 
@@ -12,17 +12,6 @@ RUN mkdir -p /var/run/sshd
 
 # 设置root ssh远程登录密码为123456
 RUN echo "root:123456" | chpasswd 
-
-# 添加orache java7源，一次性安装vim，wget，curl，java7，tomcat7等必备软件
-# RUN apt-get install python-software-properties
-RUN add-apt-repository ppa:webupd8team/java
-RUN apt-get update
-RUN apt-get install -y vim wget curl oracle-java7-installer tomcat7
-
-# 设置JAVA_HOME环境变量
-RUN update-alternatives --display java
-RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle">> /etc/environment
-RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle">> /etc/default/tomcat7
 
 # 容器需要开放SSH 22端口
 EXPOSE 22
