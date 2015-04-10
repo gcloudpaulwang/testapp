@@ -4,12 +4,6 @@ FROM consol/tomcat-7.0
 # 签名啦
 MAINTAINER paulwang "165413958@qq.com"
 
-# 更新源，安装ssh server
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get install -y openssh-server
-RUN mkdir -p /var/run/sshd
-
 # 设置root ssh远程登录密码为123456
 RUN echo "root:123456" | chpasswd 
 
